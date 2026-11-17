@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI World Clips: daily reels, posted</title>
+<meta name="description" content="AI World Clips posts one short video a day. See what went live, what is next, and the status of every platform.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · kiln: ember · deal: atmospheric 3/3 (spore, coral, kiln) · draw: 398f00 · shape: Manifesto · genre: atmospheric · job: visit · hero: Poster · nav: slab · footer: colophon block · signature: the latest reel as a poster card · posture: full-palette · copy: verbatim (#5 caption, user-approved 2026-11-15) */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: E, unbuilt; sweep after build */
+/* Hallmark · waive 29 · two fixed-size ember radial blooms, 24% of canvas, transform-only drift, frozen under reduced motion · user asked for future-based motion */
+/* Hallmark · waive 81 · blooms are aria-hidden decor divs; the page's real picture is the latest-reel poster frame, which loads · user asked for future-based glow motion */
+/* Hallmark · finish-review: subagent · 6 findings · 6 resolved · gap: none */
+/* Hallmark · answered F2 · hooks keep their ellipsis; they are approved caption copy */
+/* User direction over the theme: glassy wells (backdrop blur) and amber neon motion, per "animation look like future based". */
+:root {
+  --color-paper: oklch(13% 0.012 40); --color-paper-2: oklch(17.5% 0.016 40); --color-paper-3: oklch(22% 0.018 40);
+  --color-ink: oklch(94% 0.02 80); --color-ink-2: oklch(84% 0.025 70); --color-muted: oklch(72% 0.03 60);
+  --color-rule: oklch(96% 0.01 80 / 0.12);
+  --color-accent: oklch(70% 0.2 45); --color-accent-ink: oklch(14% 0.02 40); --color-focus: oklch(76% 0.19 56);
+  --heat-2: oklch(40% 0.16 27);
+  --font-display: "Boska", "Iowan Old Style", Georgia, serif; --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 28px; --radius-well: 16px; --radius-pill: 999px; --rule-hair: 1px;
+  --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px;
+  --section-gap-s: 56px; --section-gap: 80px; --section-gap-l: 120px;
+  --dur-short: 160ms; --dur-long: 700ms; --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --text-display: clamp(56px, 8vw, 108px); --text-section: clamp(32px, 4vw, 48px); --text-title: 22px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+body {
+  margin: 0; background: var(--color-paper); color: var(--color-ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: color-mix(in oklab, var(--color-accent) 35%, transparent); }
+a { color: var(--color-ink); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.04; letter-spacing: -0.02em; overflow-wrap: break-word; min-width: 0; margin: 0; text-wrap: balance; }
+h1 { font-size: var(--text-display); line-height: 1.0; }
+h2 { font-size: var(--text-section); }
+p { margin: 0; }
+.wrap { max-width: 1360px; margin: 0 auto; padding: 0 var(--space-lg); }
+@media (min-width: 900px) { .wrap { padding: 0 var(--space-xl); } }
+.bloom { position: fixed; z-index: 0; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, color-mix(in oklab, var(--color-accent) 16%, transparent) 0%, transparent 70%);
+  animation: drift 46s var(--ease-out) infinite alternate; }
+.bloom-a { width: 26vw; height: 26vw; min-width: 320px; min-height: 320px; top: -6vw; right: -4vw; }
+.bloom-b { width: 22vw; height: 22vw; min-width: 280px; min-height: 280px; bottom: -8vw; left: -6vw; animation-duration: 58s; animation-delay: -20s; }
+@keyframes drift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-4vw, 3vh, 0); } }
+.slab { position: relative; z-index: 1; border-bottom: var(--rule-hair) solid var(--color-rule); background: color-mix(in oklab, var(--color-paper) 82%, transparent); backdrop-filter: blur(14px); }
+.slab-in { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); min-height: 64px; flex-wrap: wrap; padding-top: var(--space-sm); padding-bottom: var(--space-sm); }
+.wordmark { font-family: var(--font-display); font-weight: 500; font-size: 22px; letter-spacing: -0.02em; color: var(--color-ink); text-decoration: none; white-space: nowrap; }
+.navlinks { display: flex; gap: var(--space-lg); flex-wrap: wrap; }
+.navlinks a { font-size: 15px; font-weight: 500; color: var(--color-ink-2); text-decoration: none; transition: color var(--dur-short) var(--ease-out); }
+.navlinks a:hover { color: var(--color-ink); }
+main { position: relative; z-index: 1; }
+.hero { padding: var(--section-gap-l) 0 var(--section-gap); }
+.hero p.lede { font-size: 19px; color: var(--color-ink-2); max-width: 32ch; margin-top: var(--space-md); }
+.actions { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-lg); }
+.btn { display: inline-flex; align-items: center; min-height: 50px; padding: 0 var(--space-lg); border-radius: var(--radius-pill); font-weight: 500; font-size: 16px; text-decoration: none; white-space: nowrap; transition: background-color var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out); }
+.btn--primary { background: var(--color-accent); color: var(--color-accent-ink); box-shadow: 0 0 32px color-mix(in oklab, var(--color-accent) 32%, transparent); }
+.btn--primary:hover { background: var(--color-focus); }
+.btn:active { transform: translateY(1px); }
+.navlinks a:active, .links a:active { color: var(--color-accent); }
+.btn--ghost { background: transparent; color: var(--color-ink); box-shadow: inset 0 0 0 var(--rule-hair) var(--color-rule); }
+.btn--ghost:hover { box-shadow: inset 0 0 0 var(--rule-hair) var(--color-ink-2); }
+.poster { margin-top: var(--space-2xl); }
+.well { background: color-mix(in oklab, var(--color-paper-2) 72%, transparent); backdrop-filter: blur(14px); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-well); }
+.poster-card { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); padding: var(--space-lg); max-width: 880px; }
+.poster-card img { width: 100%; height: 180px; object-fit: cover; object-position: center 30%; border-radius: var(--radius-well); display: block; }
+@media (min-width: 760px) { .poster-card { grid-template-columns: 216px minmax(0, 1fr); align-items: center; } .poster-card img { height: auto; aspect-ratio: 9 / 16; } }
+.poster-card .poster-title { font-size: var(--text-title); margin-top: var(--space-sm); }
+.poster-card .hook { color: var(--color-ink-2); margin-top: var(--space-sm); max-width: 65ch; }
+.meta { font-size: 15px; font-weight: 500; color: var(--color-muted); }
+.nowrap { white-space: nowrap; }
+.links { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-md); }
+.links a { font-size: 15px; font-weight: 500; color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 4px; transition: text-decoration-color var(--dur-short) var(--ease-out); }
+.links a:hover { text-decoration-color: var(--color-accent); }
+section { padding: var(--section-gap) 0; }
+section.status { padding: var(--section-gap-s) 0; }
+section + section { border-top: var(--rule-hair) solid var(--color-rule); }
+section > .wrap > h2 { margin-bottom: var(--space-lg); }
+.rows { display: grid; gap: var(--space-md); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-sm); padding: var(--space-md) var(--space-lg); }
+.row.row--solo { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .row { grid-template-columns: 150px minmax(0, 1fr); align-items: start; } }
+.row h3 { font-size: var(--text-title); }
+.row .hook { color: var(--color-ink-2); margin-top: 4px; max-width: 65ch; }
+.row time { font-size: 15px; font-weight: 500; color: var(--color-muted); }
+.state { display: inline-flex; align-items: center; gap: var(--space-sm); font-size: 15px; font-weight: 500; }
+.marker { width: 9px; height: 9px; border-radius: 50%; flex: none; background: var(--color-muted); }
+.marker--live { background: var(--color-accent); box-shadow: 0 0 12px color-mix(in oklab, var(--color-accent) 65%, transparent); animation: pulse 2.4s var(--ease-out) infinite; }
+.marker--failed { background: var(--heat-2); }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.status-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-md); }
+.status-cell { padding: var(--space-md) var(--space-lg); }
+.status-cell .pname { font-weight: 500; }
+.status-cell .detail { font-size: 15px; color: var(--color-muted); margin-top: 4px; overflow-wrap: break-word; }
+.note { color: var(--color-muted); max-width: 65ch; }
+footer { border-top: var(--rule-hair) solid var(--color-rule); padding: var(--space-2xl) 0 var(--space-3xl); position: relative; z-index: 1; }
+footer .cols { display: grid; gap: var(--space-md); }
+@media (min-width: 760px) { footer .cols { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+footer p { color: var(--color-muted); font-size: 15px; max-width: 65ch; }
+footer a { color: var(--color-ink-2); }
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.js .reveal.in { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .bloom, .marker--live { animation: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  * { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+<div class="bloom bloom-a" aria-hidden="true"></div>
+<div class="bloom bloom-b" aria-hidden="true"></div>
+<header class="slab"><div class="wrap slab-in">
+<a class="wordmark" href="./">AI World Clips</a>
+<nav class="navlinks" aria-label="Channel profiles"><a href="https://www.instagram.com/aiwo.rldclips/">Instagram</a><a href="https://www.youtube.com/@AIWorldClips-z4v">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips">Threads</a><a href="https://www.facebook.com/profile.php?id=61596150134728">Facebook</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<h1>AI World Clips</h1>
+<p class="lede">One short video a day, everywhere you watch.</p>
+<div class="actions"><a class="btn btn--primary" href="https://www.instagram.com/reel/Df2TYDnhFQa/">Watch the latest reel</a><a class="btn btn--ghost" href="#next">See what&rsquo;s next</a></div>
+<div class="poster"><div class="well poster-card reveal"><img src="assets/poster-latest.jpg" width="540" height="960" alt="Still from Sheru the Boss Lion"><div><p class="meta">Latest reel, 17 Nov 2026</p><h2 class="poster-title">Sheru the Boss Lion</h2><p class="hook">Sheru the Boss Lion has <span class="nowrap">arrived 🦁👑</span></p><p class="links"><a href="https://www.instagram.com/reel/Df2TYDnhFQa/">Instagram</a><a href="https://facebook.com/reel/3781650005322035/">Facebook</a><a href="https://youtube.com/shorts/dWqIR6g9U-4">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/Df106osiMy1">Threads</a><a href="https://www.dailymotion.com/video/xbxfwz2">Dailymotion</a></p></div></div></div>
+</div></section>
+<section class="status"><div class="wrap">
+<h2>Platforms, right now</h2>
+<div class="status-grid"><div class="well status-cell reveal"><p class="pname">Instagram</p><p class="state"><span class="marker marker--live" aria-hidden="true"></span><span role="status">Wired</span></p><p class="detail">Ready to post</p></div><div class="well status-cell reveal"><p class="pname">Facebook</p><p class="state"><span class="marker marker--live" aria-hidden="true"></span><span role="status">Wired</span></p><p class="detail">Ready to post</p></div><div class="well status-cell reveal"><p class="pname">YouTube</p><p class="state"><span class="marker " aria-hidden="true"></span><span role="status">Awaiting token</span></p><p class="detail">Authorisation pending</p></div><div class="well status-cell reveal"><p class="pname">Threads</p><p class="state"><span class="marker " aria-hidden="true"></span><span role="status">Awaiting token</span></p><p class="detail">Authorisation pending</p></div><div class="well status-cell reveal"><p class="pname">Dailymotion</p><p class="state"><span class="marker " aria-hidden="true"></span><span role="status">Awaiting token</span></p><p class="detail">Authorisation pending</p></div></div><p class="note" style="margin-top: var(--space-md)">The first automated run hasn’t happened yet. The daily run posts one clip at 17:00 IST.</p>
+</div></section>
+<section><div class="wrap">
+<h2>Posted, one a day</h2>
+<div class="rows"><article class="well row reveal"><time datetime="2026-11-17">17 Nov 2026</time><div><h3>Sheru the Boss Lion</h3><p class="hook">Sheru the Boss Lion has <span class="nowrap">arrived 🦁👑</span></p><p class="links"><a href="https://www.instagram.com/reel/Df2TYDnhFQa/">Instagram</a><a href="https://facebook.com/reel/3781650005322035/">Facebook</a><a href="https://youtube.com/shorts/dWqIR6g9U-4">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/Df106osiMy1">Threads</a><a href="https://www.dailymotion.com/video/xbxfwz2">Dailymotion</a></p></div></article><article class="well row reveal"><time datetime="2026-11-16">16 Nov 2026</time><div><h3>Weird AI Ronaldo emotional moment</h3><p class="hook">The most unexpected goal <span class="nowrap">ever 😂⚽</span></p><p class="links"><a href="https://www.instagram.com/reel/Df2TDd1nv9U/">Instagram</a><a href="https://facebook.com/reel/1847443676450326/">Facebook</a><a href="https://youtube.com/shorts/mcfg7HC0wM8">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/DfzP6aHiKUf">Threads</a><a href="https://www.dailymotion.com/video/xbx4voe">Dailymotion</a></p></div></article><article class="well row reveal"><time datetime="2026-11-15">15 Nov 2026</time><div><h3>Motu and Patlu outside Mona&#x27;s house</h3><p class="hook">Motu Patlu are back — and Mona&#x27;s house has a surprise <span class="nowrap">waiting 😄🏠</span></p><p class="links"><a href="https://www.instagram.com/reel/Df2SybOTRaK/">Instagram</a><a href="https://facebook.com/reel/1609110117686608/">Facebook</a><a href="https://youtube.com/shorts/HSh8aoqLPIM">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/DfwrFUciHG5">Threads</a><a href="https://www.dailymotion.com/video/xbwuheq">Dailymotion</a></p></div></article><article class="well row reveal"><time datetime="2026-11-14">14 Nov 2026</time><div><h3>Man in white outfit relaxing</h3><p class="hook">White outfit, calm vibes, pure <span class="nowrap">peace 😌🤍</span></p><p class="links"><a href="https://www.instagram.com/reel/Df2Sj4rJq1y/">Instagram</a><a href="https://facebook.com/reel/1171055031931441/">Facebook</a><a href="https://youtube.com/shorts/bVjMblTCQa4">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/DfuGagBiGRd">Threads</a><a href="https://www.dailymotion.com/video/xbwkggy">Dailymotion</a></p></div></article><article class="well row reveal"><time datetime="2026-11-12">12 Nov 2026</time><div><h3>Superstar in purple shirt</h3><p class="hook">Purple shirt, superstar <span class="nowrap">swag 😎💜</span></p><p class="links"><a href="https://www.instagram.com/reel/DfpHtGElJGS/">Instagram</a><a href="https://www.facebook.com/reel/1449931186609404/">Facebook</a><a href="https://www.youtube.com/shorts/2R8heerk68I">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/Dfo9816CH0q">Threads</a><a href="https://www.dailymotion.com/video/xbvz8xu">Dailymotion</a></p></div></article><article class="well row reveal"><time datetime="2026-11-11">11 Nov 2026</time><div><h3>Mafia boss exiting helicopter</h3><p class="hook">Mafia boss energy, straight out of the <span class="nowrap">helicopter 😎🚁</span></p><p class="links"><a href="https://www.instagram.com/reel/DfmyBUXjO-a/">Instagram</a><a href="https://www.facebook.com/reel/2388384831898835">Facebook</a><a href="https://www.youtube.com/shorts/oyA2IEjPC3g">YouTube</a><a href="https://www.threads.com/@aiwo.rldclips/post/Dfmzs1biHvk">Threads</a><a href="https://www.dailymotion.com/video/xbvs0ge">Dailymotion</a></p></div></article></div>
+</div></section>
+<section id="next"><div class="wrap">
+<h2>Next up at 17:00</h2>
+<div class="rows"><article class="well row row--solo reveal"><div><h3>Motu and Patlu rain Noida</h3><p class="hook">Motu Patlu in the rain. But is this Noida or <span class="nowrap">Barcelona? 😂🌧️</span></p><p class="meta">Clip 8</p></div></article><article class="well row row--solo reveal"><div><h3>Two men with lion and hyena heads</h3><p class="hook">A lion and a hyena walk down the street… and nobody <span class="nowrap">blinks 🦁😂</span></p><p class="meta">Clip 9</p></div></article><article class="well row row--solo reveal"><div><h3>Village life children soccer</h3><p class="hook">Village kids, one ball, and the purest game of <span class="nowrap">football ⚽❤️</span></p><p class="meta">Clip 10</p></div></article><article class="well row row--solo reveal"><div><h3>Vegetable pool party</h3><p class="hook">The vegetables threw a pool party and everyone&#x27;s <span class="nowrap">invited 🥕🏊😄</span></p><p class="meta">Clip 11</p></div></article><article class="well row row--solo reveal"><div><h3>Sun Wukong vs Taotie</h3><p class="hook">Sun Wukong vs Taotie, the battle you didn&#x27;t know you <span class="nowrap">needed ⚔️🐒</span></p><p class="meta">Clip 12</p></div></article><article class="well row row--solo reveal"><div><h3>Bear and sheep Iraqi village comedy</h3><p class="hook">A bear, a sheep, and a village full of <span class="nowrap">laughs 🐻🐑😄</span></p><p class="meta">Clip 13</p></div></article><article class="well row row--solo reveal"><div><h3>Sugarcane juice vendor</h3><p class="hook">Fresh sugarcane juice, the old-school <span class="nowrap">way 🥤😌</span></p><p class="meta">Clip 14</p></div></article><article class="well row row--solo reveal"><div><h3>Urdu pronunciation</h3><p class="hook">This Urdu pronunciation will make your <span class="nowrap">day 😄🗣️</span></p><p class="meta">Clip 15</p></div></article></div>
+</div></section>
+</main>
+<footer><div class="wrap cols">
+<p>AI World Clips posts one short video a day at 17:00 IST. This page is generated from the posting queue after every run.</p>
+<p>Source code: <a href="https://github.com/mandeep95/ai-world-clips-auto">github.com/mandeep95/ai-world-clips-auto</a><br>Page generated 17 November 2026, 22:37 IST.<br>Type: Boska and Geist.</p>
+</div></footer>
+<script>
+document.documentElement.classList.add('js');
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
