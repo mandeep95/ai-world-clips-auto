@@ -1,0 +1,162 @@
+# AI World Clips — daily posting queue.
+# One item a day, in file order. The runner takes the first `pending` item.
+# status: pending | done | held | skipped
+# - held: never posted by the runner (copyright hold, or held for later).
+#   Flip to `pending` only by a deliberate human decision.
+# - done: posted; urls record what went live where.
+# Hooks are baked in here so the runner needs no AI at runtime.
+items:
+  - id: 1
+    index: 9
+    title: Mafia boss exiting helicopter
+    source: null
+    hook: "Mafia boss energy, straight out of the helicopter 😎🚁"
+    status: done
+    posted_date: 2026-11-11
+    urls:
+      instagram: https://www.instagram.com/reel/DfmyBUXjO-a/
+      youtube: https://www.youtube.com/shorts/oyA2IEjPC3g
+      threads: https://www.threads.com/@aiwo.rldclips/post/Dfmzs1biHvk
+      dailymotion: https://www.dailymotion.com/video/xbvs0ge
+      facebook: https://www.facebook.com/reel/2388384831898835
+  - id: 2
+    index: 3
+    title: Superstar in purple shirt
+    source: null
+    hook: "Purple shirt, superstar swag 😎💜"
+    status: done
+    posted_date: 2026-11-12
+    urls:
+      instagram: https://www.instagram.com/reel/DfpHtGElJGS/
+      youtube: https://www.youtube.com/shorts/2R8heerk68I
+      facebook: https://www.facebook.com/reel/1449931186609404/
+      threads: https://www.threads.com/@aiwo.rldclips/post/Dfo9816CH0q
+      dailymotion: https://www.dailymotion.com/video/xbvz8xu
+  - id: 3
+    index: 6
+    title: Telugu dialogues children
+    source: null
+    hook: "These little stars and their Telugu dialogues will melt your heart 😄❤️"
+    status: held
+    note: "HELD — copyright flag (2026-11-13): a frame carries another creator's name 'Irshad Kikker', a 'Kicker' watermark and a KlingAI credit. Looks like another creator's video reposted as-is. NEVER post to Instagram/Facebook. Already live on YouTube/Threads/Dailymotion from 2026-11-13 — do not re-post there either. Source file is NOT in this repo."
+    posted_date: 2026-11-13
+    urls:
+      youtube: https://www.youtube.com/shorts/FBBs1Lv3lHc
+      threads: https://www.threads.com/@aiwo.rldclips/post/DfriW9-iMqU
+      dailymotion: https://www.dailymotion.com/video/xbw9xym
+  - id: 4
+    index: 4
+    title: Man in white outfit relaxing
+    source: null
+    hook: "White outfit, calm vibes, pure peace 😌🤍"
+    status: done
+    posted_date: 2026-11-14
+    urls:
+      youtube: https://youtube.com/shorts/bVjMblTCQa4
+      threads: https://www.threads.com/@aiwo.rldclips/post/DfuGagBiGRd
+      dailymotion: https://www.dailymotion.com/video/xbwkggy
+      instagram: https://www.instagram.com/reel/Df2Sj4rJq1y/
+      facebook: https://facebook.com/reel/1171055031931441/
+  - id: 5
+    index: 1
+    title: Motu and Patlu outside Mona's house
+    source: browser-download-20261105T115801.786418900Z-1-kling_20260917_VIDEO_Creami_un__5345_0.mp4
+    hook: "Motu Patlu are back — and Mona's house has a surprise waiting 😄🏠"
+    status: done
+    posted_date: 2026-11-15
+    urls:
+      youtube: https://youtube.com/shorts/HSh8aoqLPIM
+      threads: https://www.threads.com/@aiwo.rldclips/post/DfwrFUciHG5
+      dailymotion: https://www.dailymotion.com/video/xbwuheq
+      instagram: https://www.instagram.com/reel/Df2SybOTRaK/
+      facebook: https://facebook.com/reel/1609110117686608/
+  - id: 6
+    index: 10
+    title: Weird AI Ronaldo emotional moment
+    source: browser-download-20261105T120927.733021756Z-10-kling_20261017_VIDEO_Edit__Vide_237_0.mp4
+    hook: "The most unexpected goal ever 😂⚽"
+    status: done
+    posted_date: 2026-11-16
+    urls:
+      youtube: https://youtube.com/shorts/mcfg7HC0wM8
+      threads: https://www.threads.com/@aiwo.rldclips/post/DfzP6aHiKUf
+      dailymotion: https://www.dailymotion.com/video/xbx4voe
+      instagram: https://www.instagram.com/reel/Df2TDd1nv9U/
+      facebook: https://facebook.com/reel/1847443676450326/
+  - id: 7
+    index: 0
+    title: Sheru the Boss Lion
+    source: browser-download-20261105T115726.161047035Z-0-kling_20261017_VIDEO_Create_a_1_4295_0.mp4
+    hook: "Sheru the Boss Lion has arrived 🦁👑"
+    status: done
+    posted_date: 2026-11-17
+    urls:
+      youtube: https://youtube.com/shorts/dWqIR6g9U-4
+      threads: https://www.threads.com/@aiwo.rldclips/post/Df106osiMy1
+      dailymotion: https://www.dailymotion.com/video/xbxfwz2
+      instagram: https://www.instagram.com/reel/Df2TYDnhFQa/
+      facebook: https://facebook.com/reel/3781650005322035/
+  - id: 8
+    index: 7
+    title: Motu and Patlu rain Noida
+    source: 08-motu-patlu-rain-noida.mp4
+    hook: "Motu Patlu in the rain. But is this Noida or Barcelona? 😂🌧️"
+    status: pending
+    note: "Pre-screened 2026-11-17: source 720x1280, 3.0s — needs upscale. Flaws: end card reads garbled 'Welcme Nodda'; main sign says 'WELCOME BARCELONA' while side signs say Lucknow 100 Km / Kanpur 80 Km. User's call on post-as-is vs hold was still open at build time — the runner posts it as-is per the daily auto-schedule."
+  - id: 9
+    index: 2
+    title: Two men with lion and hyena heads
+    source: 09-lion-hyena-heads.mp4
+    hook: "A lion and a hyena walk down the street… and nobody blinks 🦁😂"
+    status: pending
+    note: "Pre-screened 2026-11-17: source 1176x1764 (2:3), 5.0s — needs blurred-pad conversion. Clean frames, no other creator mark, no garbled text."
+  - id: 10
+    index: 11
+    title: Village life children soccer
+    source: 10-village-children-soccer.mp4
+    hook: "Village kids, one ball, and the purest game of football ⚽❤️"
+    status: pending
+  - id: 11
+    index: 12
+    title: Vegetable pool party
+    source: 11-vegetable-pool-party.mp4
+    hook: "The vegetables threw a pool party and everyone's invited 🥕🏊😄"
+    status: pending
+  - id: 12
+    index: 13
+    title: Sun Wukong vs Taotie
+    source: 12-sun-wukong-vs-taotie.mp4
+    hook: "Sun Wukong vs Taotie, the battle you didn't know you needed ⚔️🐒"
+    status: pending
+  - id: 13
+    index: 5
+    title: Bear and sheep Iraqi village comedy
+    source: 13-bear-sheep-village.mp4
+    hook: "A bear, a sheep, and a village full of laughs 🐻🐑😄"
+    status: pending
+  - id: 14
+    index: 16
+    title: Sugarcane juice vendor
+    source: 14-sugarcane-vendor.mp4
+    hook: "Fresh sugarcane juice, the old-school way 🥤😌"
+    status: pending
+  - id: 15
+    index: 17
+    title: Urdu pronunciation
+    source: 15-urdu-pronunciation.mp4
+    hook: "This Urdu pronunciation will make your day 😄🗣️"
+    status: pending
+  - id: 16
+    index: 8
+    title: Chicken mimics woman
+    source: held-08-chicken-mimics-woman.mp4
+    hook: ""
+    status: held
+    note: "Held for later — ~30s clip. No hook written yet; write one before flipping to pending."
+  - id: 17
+    index: 15
+    title: Khalnayak animated character
+    source: held-15-khalnayak.mp4
+    hook: ""
+    status: held
+    note: "Held for later — ~30s clip. No hook written yet; write one before flipping to pending."
