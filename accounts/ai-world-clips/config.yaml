@@ -1,0 +1,28 @@
+# Account config: AI World Clips (@aiwo.rldclips)
+# Copy this whole folder to add another account — see docs/ADD_ACCOUNT.md.
+slug: ai-world-clips
+name: AI World Clips
+env_prefix: AWC
+queue_file: accounts/ai-world-clips/queue.yaml
+video_dir: accounts/ai-world-clips/videos
+# Public base URL for the videos. Threads fetches the video from here, so it
+# must be publicly reachable. The repo is public, so raw.githubusercontent.com
+# works. (Meta, YouTube and Dailymotion get the converted file uploaded as
+# bytes, not a URL.)
+video_public_base: https://raw.githubusercontent.com/mandeep95/ai-world-clips-auto/main/accounts/ai-world-clips/videos
+caption_footer: "Best videos from around the world, daily 🌍 Follow for your daily dose"
+hashtags: "#viral #reels #trending #explore #fyp"
+platforms:
+  meta: true # Facebook Page + Instagram Reel (one script call)
+  threads: true
+  dailymotion: true
+  youtube: true
+# Setup state per platform, shown on the status site before the first run.
+# wired = code + token exist; awaiting-token = owner authorisation still needed.
+setup:
+  meta: wired
+  threads: awaiting-token
+  dailymotion: awaiting-token
+  youtube: awaiting-token
+dailymotion_category: funny # Dailymotion category for these clips
+youtube_category_id: "24" # 24 = Entertainment
